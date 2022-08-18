@@ -1,0 +1,13 @@
+@import url(./reset.css);
+@import url(./sideBar.css);
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    background-color: #F0F1F6;
+}
+
