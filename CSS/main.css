@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./sideBar.css);
+@import url(./dashBoard.css);
 html{
     height: 100%;
     width: 100%;
@@ -11,3 +12,7 @@ body{
     background-color: #F0F1F6;
 }
 
+.hidden{
+    /* visibility: hidden; */
+    display: none;
+}
