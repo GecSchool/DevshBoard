@@ -46,9 +46,13 @@
     width: 50px;
     top: 165px;
     background-color: white;
-    /* background-image: linear-gradient(to bottom, #fff, #ddd); */
-    /* box-shadow: 2px 2px 2px rgba(0,0,0,.4); */
     transform: skew(0,-10deg);
     border-radius: 0 0 5px 0;
     z-index: -1;
+}
+.Card{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
 }
