@@ -18,3 +18,10 @@ body{
 .absolute{
     position: absolute;
 }
+/* .unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -ms-user-select : none
+} */

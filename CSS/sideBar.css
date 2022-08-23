@@ -1,5 +1,6 @@
 @import url(./bookMark.css);
 .sideBar{
+    z-index: 3;
     height: 90%;
     width: 400px;
     display: flex;
@@ -9,14 +10,25 @@
     top: 5%;
     /* background-color: blue; */
 }
+.sideBarHover{
+    left: 0px;
+}
 .sideBar:hover{
     left: 0px;
 }
+/* .sideBarHover{
+    left: -350px;
+} */
 .sideCard{
     width: 350px;
     height: 100%;
     border-radius: 0 0 10px 0;
     background-color: white;
+    overflow-y: scroll;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
 }
 .sideButton{
     width: 50px;
@@ -53,6 +65,22 @@
 .Card{
     width: 200px;
     height: 200px;
-    background-color: black;
-    margin: 10px;
+    margin: auto;
+}
+
+.sideCard::-webkit-scrollbar-track
+{
+    border-radius: 2px;
+}
+
+.sideCard::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F7F7F7;
+}
+
+.sideCard::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #BFBFBF;
 }
