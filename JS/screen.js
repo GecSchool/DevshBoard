@@ -57,20 +57,24 @@ window.onload = (event) => {
     // dashBoard.addEventListener('dragleave',dragLeave)
     sideBar.addEventListener('drop',dropOnSideBar)
     sideBar.addEventListener('dragover',dragOver)
-    console.log(2)
-    sideBar.onmouseover = ()=>{
-        sideBarHover()
-    }
-    sideBar.onmouseout = ()=>{
-        sideBarHover()
-    }
-    // sideBar.addEventListener('dragenter',sideBarHover)
-    // sideBar.addEventListener('dragleave',sideBarHover)
-    function sideBarHover(){
-        // event.preventDefault();
-        console.log(1)
-        sideBar.classList.toggle('sideBarHover')
-    }
+    // sideBar.onmouseover = ()=>{
+    //     sideBarHoverOn()
+    // }
+    // sideBar.onmouseout = ()=>{
+    //     sideBarHoverOff()
+    // }
+    // sideBar.addEventListener('dragenter',sideBarHoverOn)
+    // sideBar.addEventListener('dragleave',sideBarHoverOff)
+    // function sideBarHoverOn(event){
+    //     event.preventDefault();
+    //     console.log('on',tmp++)
+    //     sideBar.classList.add('sideBarHover')
+    // }
+    // function sideBarHoverOff(event){
+    //     event.preventDefault()
+    //     console.log('off')
+    //     sideBar.classList.remove('sideBarHover')
+    // }
     // function dragEnter(){
     //     // change dashBoard background color
     //     console.log(12)
