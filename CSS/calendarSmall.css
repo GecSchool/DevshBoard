@@ -1,0 +1,29 @@
+.calendarSmall{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.calendarSmall__grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 5px;
+}
+.calendarSmall__Head{
+    font-size: 1.4rem;
+    margin: 10px 10px;
+}
+.calendarSmall__dateBoard div{
+    /* padding: .6rem; */
+    font-size: .9rem;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
