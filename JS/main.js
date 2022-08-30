@@ -3,4 +3,5 @@ window.onload = ()=>{
     screenHandler()
     ToDoListHandler(TDLHandler)
     calendarHandler(TDLHandler)
+    clockHandler()
 }

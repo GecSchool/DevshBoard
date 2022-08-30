@@ -4,7 +4,8 @@ class MainHander{
         const LOCAL_COLLECTION_KEY = 'TDLS'
         const LOCAL_RECENT_KEY = 'todayTDL'
         const TODAY_KEY = `${date.getFullYear()}${date.getMonth()}${date.getDate()}`
-        this.TDLs = JSON.parse(localStorage.getItem(LOCAL_COLLECTION_KEY)) 
+        const tmp = JSON.parse(localStorage.getItem(LOCAL_COLLECTION_KEY)) 
+        this.TDLs = tmp === null ? {} : tmp
         this.todayTDL = JSON.parse(localStorage.getItem(LOCAL_RECENT_KEY))
         if(!this.todayTDL){
             // this.TDLs = {}
@@ -40,8 +41,7 @@ class ThingToDo{
 }
 
 // contenteditable
-const ToDoListHandler = ()=>{
-    const TDLHandler = new MainHander()
+const ToDoListHandler = (TDLHandler)=>{
     const todayTDL = TDLHandler.todayTDL
     const toDoList = document.querySelector(".toDoList")
     const plusBtn = document.querySelector(".plusBtn")
