@@ -8,32 +8,8 @@
     <title>DevshBoard</title>
   </head>
   <body>
-    <div class="sideBar unselectable">
+    <div class="sideBar">
       <div class="sideCard">
-        <!-- <div
-          id="0"
-          class="Card"
-          draggable="true"
-          style="background-color: black"
-        ></div>
-        <div
-          id="1"
-          class="Card"
-          draggable="true"
-          style="background-color: blue"
-        ></div>
-        <div
-          id="2"
-          class="Card"
-          draggable="true"
-          style="background-color: red"
-        ></div>
-        <div
-          id="3"
-          class="Card"
-          draggable="true"
-          style="background-color: yellow"
-        ></div> -->
         <div id="0" draggable="true" class="Card toDoList">
           <h2>To Do List</h2>
           <ul></ul>
@@ -46,6 +22,40 @@
           </div>
           <form class="TDLInput hidden" action="">
             <input class="ToDoNameInput" type="text" />
+          </form>
+        </div>
+        <div id="1" draggable="true" class="Card calendarSmall">
+          <div class="calendarSmall__Head"></div>
+          <div class="calendarSmall__grid calendarSmall__dateHead">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wen</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="calendarSmall__grid calendarSmall__dateBoard"></div>
+        </div>
+        <div id="2" draggable="true" class="Card clockDigital">
+          <div class="hidden clockDigital__Btn">BTN</div>
+          <ul class="clockDigital__BtnNav">
+            <li class="clockDigital__clockBtn hidden">clock</li>
+            <li class="clockDigital__stopWatchBtn">stop watch</li>
+            <!-- <li class="clockDigital__timerBtn">timer</li> -->
+          </ul>
+          <span class="clockDigital__time"></span>
+          <div class="stopWatchBtn hidden">
+            <div class="startBtn">topBTN</div>
+            <div class="stopBtn hidden">stopBTN</div>
+            <div class="resetBtn">bottomBTN</div>
+          </div>
+          <div class="buttonDiv"></div>
+        </div>
+        <div id="3" draggable="true" class="Card searchBar">
+          <div>icon</div>
+          <form action="">
+            <input type="text" />
           </form>
         </div>
       </div>
@@ -81,5 +91,10 @@
     </div>
     <div class="dashBoard"></div>
     <script src="JS/screen.js"></script>
+    <script src="JS/ToDoList.js"></script>
+    <script src="JS/calendar.js"></script>
+    <script src="JS/clockDigital.js"></script>
+    <script src="JS/searchBar.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
