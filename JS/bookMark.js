@@ -16,10 +16,13 @@ const bookMarkHandler = function bookMarkHandler(){
     }
     const paintBookMark = function paintBookMark(NAMEINPUT,URLINPUT){
         const a = document.createElement('a')
+        const img = document.createElement('img')
         const span = document.createElement('span')
+        const size = 24
         // class List add
         a.classList.add('bookMark')
-        span.className.add('bookMarkName')
+        img.classList.add('bookMarkImg')
+        span.classList.add('bookMarkName')
         // if NAMEINPUT if '' => urlinput is name
         if(NAMEINPUT){
             // name value is exist
@@ -29,23 +32,34 @@ const bookMarkHandler = function bookMarkHandler(){
             span.innerText = URLINPUT.length <= 11 ? URLINPUT : URLINPUT.slice(0,11) + '...'
         }
         // a.href = URL input 
+        img.src = `https://www.google.com/s2/favicons?domain=${URLINPUT}&sz=${size}`
         a.href = URLINPUT
 
         // favicon add
+        a.appendChild(img)
         a.appendChild(span)
         bookMarks.appendChild(a)
     }
     // name input evnet handler
     nameForm.addEventListener('submit',(event)=>{
         event.preventDefault()
+        if(urlInput.value){
+            // on url => paint Bookmark
+            toggleHidden()
+            paintBookMark(nameInput.value,urlInput.value)
+            nameInput.value = ''
+            urlInput.value = ''
+        }
     })
     // url input event handler
     urlForm.addEventListener('submit',(event)=>{
         event.preventDefault()
-        const URLINPUT = urlInput.value
-        if(URLINPUT){
+        if(urlInput.value){
             // on url => paint Bookmark
-            paintBookMark(nameInput.value,URLINPUT)
+            toggleHidden()
+            paintBookMark(nameInput.value,urlInput.value)
+            nameInput.value = ''
+            urlInput.value = ''
         } 
     })
     // cancel btn event handler
@@ -56,12 +70,12 @@ const bookMarkHandler = function bookMarkHandler(){
     })
     // complete btn event hadler
     completeBtn.addEventListener('click',(event)=>{
-        const NAMEINPUT = nameInput.value
-        const URLINPUT = urlInput.value
-        if(URLINPUT){
+        if(urlInput.value){
             // can click
             toggleHidden()
-            paintBookMark(NAMEINPUT,URLINPUT)
+            paintBookMark(nameInput.value,urlInput.value)
+            nameInput.value = ''
+            urlInput.value = ''
         }
 
     })
