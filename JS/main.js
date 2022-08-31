@@ -5,4 +5,5 @@ window.onload = ()=>{
     calendarHandler(TDLHandler)
     searchBarHandler()
     clockHandler()
+    bookMarkHandler()
 }

@@ -9,6 +9,9 @@ body{
     height: 100%;
     width: 100%;
     background-color: #F0F1F6;
+    background-image: url(../Img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hidden{

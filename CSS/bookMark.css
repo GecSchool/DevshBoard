@@ -1,6 +1,23 @@
+.bookMarks{
+    width: 753px;
+    height: 303px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    padding: 0px;
+    /* display: inline flow-root; */
+}
 .bookMark{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.bookMarkIcon{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;    
+}
+.bookMark__Input{
+    width: 100%;
+    height: 100%;
 }

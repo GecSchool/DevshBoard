@@ -8,6 +8,7 @@
     <title>DevshBoard</title>
   </head>
   <body>
+    <link rel="shortcut icon" href="https://www.naver.com/" />
     <div class="sideBar">
       <div class="sideCard">
         <div id="0" draggable="true" class="Card toDoList">
@@ -58,7 +59,26 @@
             <input type="text" />
           </form>
         </div>
+        <div id="4" draggable="true" class="Card bookMarks">
+          <div class="bookMark bookMark__addBtn">
+            <div class="bookMarkIcon">icon</div>
+          </div>
+          <div class="bookMark__Input hidden">
+            <h3>Add Bookmark</h3>
+            <span>Name</span>
+            <form action="">
+              <input class="bookMark__nameInput" type="text" />
+            </form>
+            <span>URL</span>
+            <form class="" action="">
+              <input class="bookMark__urlInput" type="text" />
+            </form>
+            <div class="bookMark__cancelBtn">취소</div>
+            <div class="bookMark__completeBtn">완료</div>
+          </div>
+        </div>
       </div>
+      <a href=""></a>
       <div class="sideButton">
         <div class="btn">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
@@ -95,6 +115,7 @@
     <script src="JS/calendar.js"></script>
     <script src="JS/clockDigital.js"></script>
     <script src="JS/searchBar.js"></script>
+    <script src="JS/bookMark.js"></script>
     <script src="JS/main.js"></script>
   </body>
 </html>
