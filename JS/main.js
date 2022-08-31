@@ -6,4 +6,5 @@ window.onload = ()=>{
     searchBarHandler()
     clockHandler()
     bookMarkHandler()
+    updateCircleGraph(TDLHandler.todayTDL)
 }

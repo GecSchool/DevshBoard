@@ -100,6 +100,7 @@ const ToDoListHandler = (TDLHandler)=>{
                 TDNameInput.value = ''
                 document.removeEventListener('click',detectClickOutside)
                 TDLInput.removeEventListener('keypress',enterPress)
+                updateCircleGraph(todayTDL)
             }
         }
 
@@ -111,6 +112,7 @@ const ToDoListHandler = (TDLHandler)=>{
                 TDNameInput.value = ''
                 document.removeEventListener('click',detectClickOutside)
                 TDLInput.removeEventListener('keypress',enterPress)
+                updateCircleGraph(todayTDL)
             }
         }
 
@@ -141,6 +143,7 @@ const ToDoListHandler = (TDLHandler)=>{
 
         const targetTD = this.parentNode
         deleteTD(targetTD)
+        updateCircleGraph(todayTDL)
         localStorage.setItem(LOCAL_RECENT_KEY,JSON.stringify(todayTDL))
         
     }
@@ -165,6 +168,7 @@ const ToDoListHandler = (TDLHandler)=>{
         }
         this.classList.toggle('completeTD')
         localStorage.setItem(LOCAL_RECENT_KEY,JSON.stringify(todayTDL))
+        updateCircleGraph(todayTDL)
     }
     const startTD = function startTD(event){
         // case1. current On Item === null -> toggle on 

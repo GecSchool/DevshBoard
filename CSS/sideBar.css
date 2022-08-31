@@ -3,6 +3,7 @@
 @import url(./calendar.css);
 @import url(./clock.css);
 @import url(./searchBar.css);
+@import url(./completeGraph.css);
 .sideBar{
     z-index: 3;
     height: 90%;
